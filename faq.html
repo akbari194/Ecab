@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Dynamic Question/Answer FAQ Webpage Layout</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="icon" href="http://spyrestudios.com/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Paprika">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <h1>Frequently Asked Questions</h1>
+    <p>We get lots of mail and always want to answer your inquiries. That's why our staff has created this mini FAQ page for the most commonly asked questions. Just click on any question to display the answer inline on the page.</p>
+    
+    <h2>General questions</h2>
+    <div class="q">
+      <h3 class="qhead"><a href="#q01">How do I log into the website?</a></h3>
+      <div class="answer" id="q01"><p>there is login form through which users can log in into our site</p></div>
+    </div>
+    
+    <div class="q">
+      <h3 class="qhead"><a href="#q02">How do I book a Cab?</a></h3>
+      <div class="answer" id="q02"><p> you can book cab by calling on contact no given in our site or through our site via login page by simply following simple steps to book a cab . </p></div>
+    </div>
+    
+    <div class="q">
+      <h3 class="qhead"><a href="#q03">Will I be charged for waiting time also?</a></h3>
+      <div class="answer" id="q03"><p>The charge for waiting time while the meter is flagged on is as prescribed by the Department of Transport of the respective cities. In other cities, the waiting charges are self regulated and not prescribed by any authority.</p></div>
+    </div>
+    
+    <div class="q">
+      <h3 class="qhead"><a href="#q04">Do I have to pay toll charges when I travel with E-Cabs?</a></h3>
+      <div class="answer" id="q04"><p>Yes, you will be paying toll charges at the actual rates if you cross toll posts while travelling. However, in case a cab you have booked crosses the toll gate while coming to pick you up, then you need not pay the charges.</p>
+      
+       </div>
+    </div>
+    
+		<h2>payment related queries</h2>
+		<div class="q">
+		  <h3 class="qhead"><a href="#q05">How do I pay after the completion of my trip?</a></h3>
+		  <div class="answer" id="q05"><p>You can pay the chauffeur in cash or by debit/credit card (VISA/Master Card/AMEX) as per the fare on the meter with extras, if any, (for waiting or night surcharge) and a printed receipt/e-receipt will be given to you. Please always insist on the printed receipt. If you have any complaints, please fill up our client feedback form. This will help us to resolve your problem quickly.</p></div>
+		</div>
+		
+		<div class="q">
+		  <h3 class="qhead"><a href="#q06">Will I get a printed receipt for the amount paid?</a></h3>
+		  <div class="answer" id="q06"><p>Always. Please insist on it. Our chauffeurs are trained to give the receipt for every fare they collect. If, by mistake, they don’t, please ask for it.</p></div>
+		</div>
+    
+    <div class="q">
+      <h3 class="qhead"><a href="#q07">Can I use the cab without flagging down the meter?</a></h3>
+      <div class="answer" id="q07"><p>We track every fare that the cab is taking and actively dissuade our chauffeurs from taking an un-metered fare.<p> An un-metered fare is in violation of the Department of Transport rules and exposes the chauffeur to penal action.</p>
+<p>Moreover, if you have a complaint against the chauffeur, you would not need a valid printed receipt/e-receipt at the end of your journey to make a valid complaint.</p>
+      
+      
+      
+     </div>
+    </div>
+    
+    
+    <h2> customer care&Support</h2>
+    <div class="q">
+      <h3 class="qhead"><a href="#q08">Can I cancel a booking?</a></h3>
+      <div class="answer" id="q08"><p>Absolutely. We do understand that sometimes, plans change and you may need to cancel a booking. Please tell us as soon as you can and we will cancel it for you.</p></div>
+    </div
+    
+    <div class="q">
+      <h3 class="qhead"><a href="#q09">Is there any guarantee for getting a cab if I pay Convenience Charge?</a></h3>
+      <div class="answer" id="q09"><p>This is not a guaranteed service. Cab will be provided as per availability. The Convenience Charge will be applicable only if you get a cab.</p></div>
+</p>
+      
+     </div>
+    </div>
+    
+    
+     
+      
+  </div><!-- end #w -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".qhead a").on("click", function(e){
+    e.preventDefault();
+    var href = $(this).attr("href");
+    
+    $(href).fadeToggle(450);
+  });
+});
+</script>
+</body>
+</html>
